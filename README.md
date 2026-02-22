@@ -17,7 +17,7 @@
 
 </div>
 
-### ⚠️ Requires Java to be installed on system ⚠️
+### ⚠️ Requires Java (min jdk7) to be installed on system ⚠️
 
 ---
 
