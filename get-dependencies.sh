@@ -7,8 +7,10 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    jre-openjdk \
-    openssl
+    jre-openjdk    \
+    openssl        \
+    pipewire-audio \
+    pipewire-jack
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
