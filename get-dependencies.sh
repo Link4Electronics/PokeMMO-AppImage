@@ -11,6 +11,7 @@ pacman -Syu --noconfirm \
     jre-openjdk    \
     libdecor       \
     openssl        \
+    pango          \
     pipewire-audio \
     pipewire-jack
 
