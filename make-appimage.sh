@@ -3,7 +3,7 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q pokemmo | awk '{print $2; exit}') # example command to get version of application here
+VERSION=$(pacman -Q pokemmo | awk '{print $2; exit}')
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
@@ -21,7 +21,6 @@ quick-sharun /usr/bin/pokemmo-launcher \
     /usr/lib/jvm/java* \
     /usr/bin/openssl
 
-# Additional changes can be done in between here
 echo 'ANYLINUX_DO_NOT_LOAD_LIBS=libpipewire-0.3.so*:${ANYLINUX_DO_NOT_LOAD_LIBS}' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
